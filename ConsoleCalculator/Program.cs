@@ -11,11 +11,9 @@ namespace ConsoleCalculator
         private static readonly string[] operations = { "+", "-", "*", "/" };
         static void Main(string[] args)
         {
-            //use a dot instead of a comma
-            System.Threading.Thread.CurrentThread.CurrentCulture = new System.Globalization.CultureInfo("en-US");
 
             double X = InputNumber("Enter the number X: \n");
-            string Operation = InputOperation("Enter the operation ( + | - | * | /') \n");
+            string Operation = InputOperation("Enter the operation ( + | - | * | / ) \n");
             double Y = InputNumber("Enter the number Y: \n");
             double result = 0;
             string conclusion = "Result of the operation is ";
